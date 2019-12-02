@@ -43,5 +43,10 @@ def naming_system
   # HoH all the way to Species!
   naming = {}
   labels = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"]
-  
+  current = naming 
+  for i in 0...labels.length do 
+    current[:label] = labels[i]
+    if i < labels.length - 1 
+      current[:sub_category] = {}
+      
 end
